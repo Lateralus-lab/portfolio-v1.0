@@ -1,0 +1,37 @@
+.header {
+  margin: 2rem;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: flex-end;
+
+  @media screen and (max-width: $breakpoint_md) {
+    display: none;
+  }
+}
+
+.header__link {
+  margin-left: 2.5rem;
+
+  font-size: .9rem;
+  color: var(--color_gray);
+  font-weight: 500;
+  text-decoration: none;
+
+  transition: color .2s linear;
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-right: 1rem;
+  }
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+

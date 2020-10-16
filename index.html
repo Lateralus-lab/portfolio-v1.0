@@ -1,0 +1,313 @@
+---
+layout: default
+title: HomePage
+---
+
+<header class="header">
+  <div class="container">
+    <div class="header__inner">
+
+      <div class="row">
+        <div class="col-xl-11 col-lg-10 col-md-10 col-sm-10">
+          <nav class="header__menu" id="nav-menu">
+            <a class="header__link" href="#about">About</a>
+            <a class="header__link" href="#skills">Skills</a>
+            <a class="header__link" href="#projects">Projects</a>
+            <a class="header__link" data-toggle="modal"
+               data-target="#request-modal" href="#">Contacts</a>
+          </nav>
+        </div>
+
+        <div class="col-xl-1 col-lg-2 col-md-2 col-sm-2">
+          <div class="switch">
+            <input class="switch__input" type="checkbox" id="switch" name="theme">
+            <label for="switch">Toggle</label>
+          </div>
+        </div>
+
+      </div><!-- /.header__inner -->
+    </div><!-- /.container -->
+</header>
+
+<!-- Intro -->
+<div class="container">
+
+  <div class="intro" id="intro">
+    <div class="intro__text">Hello!
+      <img class="intro__emoji intro__emoji--wave" src="assets/img/emoji/wave.png" alt="Hello" id="helloWave">
+    </div>
+
+    <div class="intro__desc">
+      I'm <span class="bold">Eli Krizevski</span>, a Javascript/Web developer who is passionate about building beautiful interfaces &amp; experiences.
+      <img class="intro__emoji" src="assets/img/emoji/man-technologist-apple.png" alt="Web developer">
+    </div>
+
+    <div class="intro__contacts">
+      <a class="btn btn--blue"
+         data-toggle="modal"
+         data-target="#request-modal" href="#">
+        Get in touch
+      </a>
+    </div>
+  </div>
+
+</div><!-- /.container -->
+
+<!-- About -->
+<div class="container">
+  <div class="about" id="about" data-aos="fade-up"
+       data-aos-anchor=".about">
+
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="section__title">About</div>
+      </div>
+      <div class="col-lg-8">
+        <div class="about__text">
+          <p>
+            I am a passionate developer looking to make an impact in this world. There are a few things that mean the most to me. My family, my friends, my love for a healthy lifestyle, building for the web and doing my part in making this a better world.
+          </p>
+          <p>
+            I'm currently seeking out the right team where I can work with other passionate individuals to build digital products that positively impact people lives. I believe in always exceeding expectations and continuously learning to be the best in my craft.
+          </p>
+          <p>
+            <span class="bold">When I'm not in front of a computer screen</span>, I'm probably at the gym or having an awesome time with friends or family.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- /.about -->
+</div><!-- /.container -->
+
+
+<!-- Skills -->
+<div class="container">
+  <div class="skills" id="skills" data-aos="fade-up"
+       data-aos-anchor=".skills">
+
+    <div class="row">
+
+      <div class="col-lg-4">
+        <div class="section__title">Skills</div>
+      </div>
+
+      <div class="col-sm-4 col-md-4 col-lg-3">
+        <ul class="skills__list">
+          <li class="skill__list-item">LANGUAGES</li>
+          <li class="skill__list-item">JavaScript (ES6)</li>
+          <li class="skill__list-item">HTML</li>
+          <li class="skill__list-item">CSS</li>
+          <li class="skill__list-item">BEM</li>
+        </ul>
+      </div>
+
+      <div class="col-sm-4 col-md-4 col-lg-3">
+        <ul class="skills__list">
+          <li class="skill__list-item">FRAMEWORKS</li>
+          <li class="skill__list-item">React (Currently learning)</li>
+          <li class="skill__list-item">Bootstrap</li>
+          <li class="skill__list-item">SASS (SCSS)</li>
+          <li class="skill__list-item">MJML</li>
+        </ul>
+      </div>
+
+      <div class="col-sm-4 col-md-4 col-lg-2">
+        <ul class="skills__list">
+          <li class="skill__list-item">TOOLS</li>
+          <li class="skill__list-item">Git (Github)</li>
+          <li class="skill__list-item">Bash</li>
+          <li class="skill__list-item">Chrome DevTools</li>
+          <li class="skill__list-item">Gulp</li>
+        </ul>
+      </div>
+
+    </div><!-- /.row -->
+
+  </div><!-- /.skills -->
+</div><!-- /.container -->
+
+<!-- Projects -->
+<div class="container">
+  <div class="project" id="projects" data-aos="fade-up"
+       data-aos-anchor=".project">
+
+    <div class="project__block">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="section__title">Projects</div>
+        </div>
+      </div>
+
+      <div class="row justify-content-lg-center">
+        <div class="col-lg-4"></div>
+
+        <div class="col-lg-8">
+          <div class="project__title">
+            <a class="project__title-link" href="#">Landing Page Website with Multiple Pages </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-up"
+             data-aos-anchor=".project">
+          <div class="project__holder">
+            <img class="project__img" src="/assets/img/projects/centerlogistic.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-lg-8" data-aos="fade-up"
+             data-aos-anchor=".project">
+          <div class="project__link-group">
+            <a class="project__link" href="#">
+              <svg class="project__link-icon">
+                <use xlink:href="#link"></use>
+              </svg>
+            </a>
+
+            <a class="project__link" href="https://github.com/Lateralus-lab/CenterLogistic-landing-website" target="_blank">
+              <svg class="project__link-icon">
+                <use xlink:href="#github"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="project__text">This responsive website I build from scratch only using HTML, CSS and Vanilla JavaScript (no JQuery) combined with BEM methodology. I challenged myself to build this website without any frameworks to write clean code and demonstrate my style of coding.</div>
+          <ul class="project__list">
+            <li class="project__list-item">HTML</li>
+            <li class="project__list-item">CSS</li>
+            <li class="project__list-item">JavaScript</li>
+            <li class="project__list-item">BEM</li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- /.project__block -->
+
+    <div class="project__block">
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-up"
+             data-aos-anchor=".project"></div>
+
+        <div class="col-lg-8">
+          <div class="project__title">
+            <a class="project__title-link" href="#">BoohooMAN Responsive HTML Email</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-up"
+             data-aos-anchor=".project">
+          <div class="project__holder">
+            <img class="project__img" src="/assets/img/projects/boohoo.png" alt="HTML email">
+          </div>
+        </div>
+
+        <div class="col-lg-8" data-aos="fade-up"
+             data-aos-anchor=".project">
+          <div class="project__link-group">
+            <a class="project__link" href="#">
+              <svg class="project__link-icon">
+                <use xlink:href="#link"></use>
+              </svg>
+            </a>
+
+            <a class="project__link" href="#">
+              <svg class="project__link-icon">
+                <use xlink:href="#github"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="project__text">To rebuild this responsive HTML Email, I used MJML framework on the top of HTML tables and inline CSS to get this email template to render correctly across each of the most popular email clients.</div>
+          <ul class="project__list">
+            <li class="project__list-item">HTML</li>
+            <li class="project__list-item">CSS</li>
+            <li class="project__list-item">MJML</li>
+            <li class="project__list-item">Email</li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- /.project__block -->
+
+    <div class="project__block">
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-up"
+             data-aos-anchor=".project"></div>
+
+        <div class="col-lg-8" data-aos="fade-up"
+             data-aos-anchor=".project">
+          <div class="project__title">
+            <a class="project__title-link" href="#">Portfolio v1.0</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="project__holder">
+            <img class="project__img" src="/assets/img/projects/portfolio.png" alt="">
+          </div>
+        </div>
+
+        <div class="col-lg-8" data-aos="fade-up"
+             data-aos-anchor=".project">
+          <div class="project__link-group">
+            <a class="project__link" href="#">
+              <svg class="project__link-icon">
+                <use xlink:href="#link"></use>
+              </svg>
+            </a>
+
+            <a class="project__link" href="#">
+              <svg class="project__link-icon">
+                <use xlink:href="#github"></use>
+              </svg>
+            </a>
+          </div>
+
+          <div class="project__text">
+            A minimalistic portfolio I build from scratch using a cross-platform task runner Gulp. To build this portfolio website, I used the bootstrap grid system combined with BEM methodology and SASS. SVG images allowed me to change the colours of the icons to back/white, depending on which mode is turned on.
+          </div>
+          <ul class="project__list">
+            <li class="project__list-item">HTML</li>
+            <li class="project__list-item">CSS</li>
+            <li class="project__list-item">BEM</li>
+            <li class="project__list-item">SASS</li>
+            <li class="project__list-item">JavaScript</li>
+            <li class="project__list-item">JQuery</li>
+            <li class="project__list-item">Bootstrap</li>
+            <li class="project__list-item">Gulp</li>
+            <li class="project__list-item">SVG</li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- /.project__block -->
+
+  </div><!-- /.project -->
+</div><!-- /.container -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+
+      <div class="footer__link">
+        <a class="footer__link-item" data-toggle="modal"
+           data-target="#request-modal" href="#" target="_blank">Contacts</a>
+        <a class="footer__link-item" href="#" target="_blank">Linkedin</a>
+        <a class="footer__link-item" href="https://github.com/Lateralus-lab" target="_blank">Github</a>
+      </div>
+
+      <div class="footer__copy">
+        <p>Developed with love
+          <svg class="footer__copy-icon">
+            <use xlink:href="#heart"></use>
+          </svg>
+          <br>by Eli Krizevski
+        </p>
+      </div>
+
+    </div>
+  </div>
+</footer>

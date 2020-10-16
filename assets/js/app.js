@@ -1,0 +1,9 @@
+//= ../../../node_modules/jquery/dist/jquery.min.js
+//= ../../../node_modules/bootstrap/js/dist/util.js
+//= ../../../node_modules/bootstrap/js/dist/modal.js
+//= components/switch.js
+//= components/smoothScroll.js
+//= components/topButton.js
+//= components/emoji.js
+//= components/aos.js
+//= components/aosInit.js

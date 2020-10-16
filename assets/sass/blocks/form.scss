@@ -1,0 +1,30 @@
+.form__group {
+  margin-bottom: 1rem;
+}
+
+.form__button {
+  display: inline-block;
+  vertical-align: top;
+  padding: .8rem 2rem;
+
+  background: none;
+  border: 2px solid $blue;
+  border-radius: 5px;
+
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.1;
+  font-weight: 500;
+  color: $gray;
+  text-decoration: none;
+  cursor: pointer;
+
+  transition: background .2s linear, color .2s linear;
+
+  &:hover {
+    background-color: $blue;
+
+    color: $white;
+  }
+}
+

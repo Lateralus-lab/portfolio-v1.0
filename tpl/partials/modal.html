@@ -1,0 +1,40 @@
+<!-- Modal -->
+<div class="modal fade" id="request-modal"
+     tabindex="-1"
+     aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+
+      <button class="modal__close" type="button"
+              data-dismiss="modal"
+              aria-label="Close">
+        <span aria-hidden="true">
+          <svg class="modal__close-icon">
+          <use xlink:href="#close"></use>
+          </svg>
+        </span>
+      </button>
+
+      <div class="modal__title">Get in touch</div>
+      <div class="modal__text">Please fill out the form, and I will get back to you shortly</div>
+
+      <form class="form" action="/" method="post">
+        <div class="form__group">
+          <input class="input" type="text" name="name" placeholder="Your name">
+        </div>
+
+        <div class="form__group">
+          <input class="input" type="email" name="email" placeholder="Your e-mail" required>
+        </div>
+
+        <div class="form__group">
+          <textarea class="input__textarea" name="text" placeholder="Message" required></textarea>
+        </div>
+
+        <button class="form__button" type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+</div>
+

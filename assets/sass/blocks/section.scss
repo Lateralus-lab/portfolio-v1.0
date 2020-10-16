@@ -1,0 +1,15 @@
+.section__title {
+  margin-right: 8rem;
+
+  font-size: 1rem;
+  color: $blue;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: right;
+
+  @media (max-width: $breakpoint_lg) {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1.3rem;
+  }
+}

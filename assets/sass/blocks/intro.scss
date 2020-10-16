@@ -1,0 +1,122 @@
+.intro {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 300px;
+
+  @media (max-width: $breakpoint_sm) {
+    justify-content: flex-start;
+    margin-top: 5rem;
+  }
+}
+
+.intro__text {
+  font-size: 2.5rem;
+  color: var(--color_gray);
+  font-weight: 300;
+
+  @media screen and (max-width: $breakpoint_xl) {
+    font-size: 2.25rem;
+  }
+
+  @media screen and (max-width: $breakpoint_md) {
+    font-size: 2rem;
+  }
+
+  @media screen and (max-width: $breakpoint_sm) {
+    padding: 0 1.5rem;
+
+    font-size: 1.4rem;
+  }
+}
+
+.intro__desc {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 20%;
+  margin-bottom: 10%;
+
+  font-size: 2.5rem;
+  color: var(--color_gray);
+  font-weight: 300;
+
+  @media screen and (max-width: $breakpoint_xl) {
+    font-size: 2.25rem;
+  }
+
+  @media screen and (max-width: $breakpoint_md) {
+    font-size: 2rem;
+
+    margin-top: 30%;
+    margin-bottom: 20%;
+  }
+
+  @media screen and (max-width: $breakpoint_sm) {
+    padding: 0 1.5rem;
+
+    font-size: 1.4rem;
+  }
+}
+
+.intro__emoji {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+
+
+  &--wave {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+
+    &.animated {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+    }
+
+    &.wave {
+      animation-name: wave;
+      animation: wave 1s ease-in-out infinite;
+    }
+
+    @keyframes wave {
+      from {
+        transform: none;
+      }
+      15% {
+        transform: translate3d(-20%, 0, 0) rotate3d(0, 0, 1, -10deg);
+      }
+      30% {
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 7deg);
+      }
+      45% {
+        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -10deg);
+      }
+      60% {
+        transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 5deg);
+      }
+      75% {
+        transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -2deg);
+      }
+      to {
+        transform: none;
+      }
+    }
+  }
+
+  @media screen and (max-width: $breakpoint_sm) {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.intro__contacts {
+  @media screen and (max-width: $breakpoint_sm) {
+    padding: 0 1.5rem;
+
+    font-size: 1.75rem;
+  }
+}
+

@@ -1,0 +1,56 @@
+.footer {
+  margin: 2rem;
+}
+
+.footer__link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 3rem;
+
+  @media screen and (max-width: $breakpoint_lg) {
+    justify-content: center;
+  }
+}
+
+.footer__link-item {
+  margin-right: 5rem;
+
+  font-size: 1rem;
+  color: var(--color_gray);
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  transition: color .2s linear;
+
+  &:hover {
+    color: $blue;
+  }
+
+  @media screen and (max-width: $breakpoint_md) {
+    margin-right: 1rem;
+
+    font-size: .9rem;
+  }
+}
+
+.footer__copy {
+  font-size: .9rem;
+  color: var(--color_gray);
+  font-weight: 500;
+
+  &-icon {
+    width: 18px;
+    height: 18px;
+    margin-left: .2rem;
+
+    fill: red;
+  }
+
+  @media screen and (max-width: $breakpoint_sm) {
+    font-size: .8rem;
+  }
+}
+
+

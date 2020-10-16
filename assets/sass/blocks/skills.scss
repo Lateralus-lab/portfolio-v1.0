@@ -1,0 +1,35 @@
+.skills {
+  margin-bottom: 12rem;
+
+  @media screen and (max-width: $breakpoint_lg) {
+    margin-bottom: 8rem;
+  }
+
+  @media (max-width: $breakpoint_lg) {
+    margin-bottom: 5rem;
+  }
+}
+
+
+.skills__list {
+  color: var(--color_gray);
+
+  @media (max-width: $breakpoint_lg) {
+    padding: 0 1.5rem;
+  }
+}
+
+.skills__list li:first-child {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.skill__list-item:not(:first-child) {
+  font-size: .9rem;
+}
+
+.skill__list-item:last-child {
+  @media (max-width: $breakpoint_lg) {
+    margin-bottom: 1rem;
+  }
+}
